@@ -24,3 +24,17 @@ $('#mg3 ').on("click", ()=>{
     $('#bigImg1').hide();
     $('#bigImg3').fadeIn();
 })
+
+$(".fa-plus").click(function(){
+    if(Number($(".number").text()) < 10){
+
+    $(".number").text(Number($(".number").text())+1);
+    }
+})
+
+$(".fa-minus").click(function(){
+    if(Number($(".number").text()) > 1){
+
+        $(".number").text(Number($(".number").text())-1);
+    }
+})
